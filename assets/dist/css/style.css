@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+body {
+    background: #fff;
+}
+.bg_login{
+    background:url(../../images/bg-login.png);
+}
+
+.navbar-header {
+    width: 7%;
+}
+
+.navbar-default {
+    background-color: #6877dc;
+    border-color: #ffffff;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.menu{
+	padding: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.piepagina{
+    background: #67CDFD;
+}
+.piepagina h5{
+    color: #fff;
+}
+
+.banner {
+    position: relative;
+    padding: 0;
+}
+
+.banner h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    -webkit-animation-name: titulo;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes titulo {
+    0% {
+        transform: translate(-10%, -30%);
+    }
+
+    50% {
+        transform: translate(-10%, 100%);
+    }
+
+    100%{
+    	transform: translate(-10%, -50%);
+    }
+}
+
+.integrantes {
+    padding: 2%;
+}
+.integrantes h2{
+    color:#fff;
+}
+.integrantes p{
+    color:#fff;
+}
+.box1{
+	background: #E86F0C;
+}
+.corazon{
+    padding: 6%;
+    margin-top:4%;
+    margin-bottom:4%;
+    -webkit-animation-name: latidos;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: latidos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: scale(1);
+}
+@-webkit-keyframes latidos {
+    0% {
+        transform: scale(1);
+    }
+    12%{
+       transform: scale(1.1); 
+    }
+    25%{
+       transform: scale(1); 
+    }
+    32%{
+        transform: scale(1.1); 
+    }
+    50% {
+        transform: scale(1);
+    }
+    62%{
+        transform: scale(1.1); 
+    }
+    75%{
+       transform: scale(1);  
+    }
+    82%{
+        transform: scale(1.1); 
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.corazon h1{
+    color:#ff0534;
+    font-family: 'Courgette', cursive;
+}
+
+
+
+
+/* Bordered form */
+.loginform {
+    background: #E86F0C;
+    padding: 5% 0;
+}
+
+/* Full-width inputs */
+.loginform input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.loginform button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.loginform button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.loginform .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.loginform .imgcontainer img {
+    margin:auto;
+}
+
+/* Avatar image */
+.loginform img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.loginform .container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+.loginform span.psw {
+    float: right;
+    padding-top: 16px;
+    color:#fff;
+}
+.loginform span.psw a{
+    color:#67CDFD;
+}
+.loginform .contlogin b{
+    color:#fff;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .loginform span.psw {
+        display: block;
+        float: none;
+    }
+    .loginform .cancelbtn {
+        width: 100%;
+    }
+}
