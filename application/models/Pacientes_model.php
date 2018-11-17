@@ -1,6 +1,6 @@
 <?php
 
-class Home_model extends CI_Model
+class Pacientes_model extends CI_Model
 {
 	function __construct()
 	{
@@ -14,5 +14,4 @@ class Home_model extends CI_Model
 		return $query->result_array();
 	}
 }
-
 ?>

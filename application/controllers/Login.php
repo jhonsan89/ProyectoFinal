@@ -28,7 +28,6 @@ class Login extends CI_Controller {
 			$this->session->set_userdata($data_session);
 			redirect('home');
 		} else {
-			$mensaje="Usuario no registrado";
 			redirect('login');
 		}
 	}
