@@ -1,6 +1,7 @@
-<header class="container-fluid menu">
+<header class="menu">
+
 	<nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="col-md-12">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -23,4 +24,5 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
+  
 </header>

@@ -118,6 +118,21 @@ p{
     animation-iteration-count: infinite;
     transform: scale(1);
 }
+.pacinetes-cont{
+    padding: 5% 0;
+}
+.tabla{
+    background: #fff;
+    padding: 0 2%;
+}
+.sidebar{
+    background: rgba(0,0,0,0.5);
+    padding: 2%;
+}
+.sidebar h3{
+    color:#fff;
+    text-align: center;
+}
 @-webkit-keyframes latidos {
     0% {
         transform: scale(1);
@@ -231,6 +246,39 @@ p{
     border: 1px solid #ccc;
     box-sizing: border-box;
     box-shadow: 2px 6px 30px #000;
+}
+
+/*estilos tablas*/
+
+.flexigrid div.mDiv div {
+    background: #67CDFD;
+}
+.flexigrid div.tDiv {
+    background: #727270!important;
+}
+.flexigrid div.fbutton {
+    color: #fff;
+}
+.flexigrid div.fbutton:hover {
+    background: #ff4a4a;
+    border:solid 1px #ff4a4a!important;
+}
+.flexigrid div.fbutton:hover div {
+    border:solid 1px #ff4a4a!important;
+}
+.flexigrid div.sDiv {
+    background: #67cdfd !important;
+}
+.flexigrid div.pDiv {
+    background: #727270!important;
+    padding: 10px;
+}
+.flexigrid div.pDiv .pPageStat, .flexigrid div.pDiv .pcontrol {
+    color: #fff;
+}
+button, html input[type=button], input[type=reset], input[type=submit]{
+        background: #f7fb00;
+    border: hidden;
 }
 
 /* Change styles for span and cancel button on extra small screens */

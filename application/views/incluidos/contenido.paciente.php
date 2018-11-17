@@ -6,10 +6,14 @@
 			</div>	
 		</div>	
 </div>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
+<div class="container-fluid bg_login pacinetes-cont">
+	
+		<div class="col-sm-4 sidebar">
+			<h3>listado de pacientes</h3>
+			<img src="<?php echo base_url()?>assets/images/side-pacietes.png" alt="" class="img-responsive">
+		</div>
+		<div class="col-sm-8 tabla">
 			<?php echo $tabla;?>
 		</div>
-	</div>
+	
 </div>
