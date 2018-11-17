@@ -12,24 +12,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <?php include("incluidos/header.php");?>
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12 banner">
-			<img src="<?php echo base_url()?>assets/images/banner.jpg" alt="" class="img-responsive">
-			<h1>Aplicacivo Pacientes</h1>
+			<img src="<?php echo base_url()?>assets/images/home.png" alt="" class="img-responsive">
+			<h1 class="animated slideInRight delay-2s duration">Sistema de Reservas</h1>
 		</div>
-		<div class="col-md-4 integrantes box1">
-			<h2>Integrantes</h2>
-			<p>Nataly Muñoz</p>
-			<p>Sebastina Cano</p>
-			<p>Jhon Sandoval</p>
-		</div>
-		<div class="col-md-8 integrantes box2">
-			<img class="img-responsive" src="<?php echo base_url()?>assets/images/logo1.png" alt="">
+		<div class="col-sm-12 citas">
+			<div class="container">
+				<div class="col-md-4 integrantes box1 animated zoomInUp delay-1s duration">
+					<h2>Citas</h2>
+					<img class="img-responsive" src="<?php echo base_url()?>assets/images/info1.png" alt="">
+					<br>
+					<p>Cuida del la salud de tu familia, separa tu cita con nosotros.</p>				
+				</div>
+				<div class="col-md-4 integrantes box1 animated zoomInUp delay-2s duration">
+					<h2>Médicos</h2>
+					<img class="img-responsive" src="<?php echo base_url()?>assets/images/info2.png" alt="">
+					<br>
+					<p>Consulta con los mejores medicos y especialistas del país.</p>				
+				</div>
+				<div class="col-md-4 integrantes box1 animated zoomInUp delay-3s duration">
+					<h2>Medicamentos</h2>
+					<img class="img-responsive" src="<?php echo base_url()?>assets/images/info3.png" alt="">
+					<br>
+					<p>Obtén tus medicamentos a bajo costo de manera oportuna, sin hacer filas tediosas.</p>				
+				</div>
+			</div>
 		</div>
 	</div>
 	
 </div>
-
+<?php include("incluidos/footer.php");?>
 </body>
 </html>

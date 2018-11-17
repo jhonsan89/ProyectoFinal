@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                             <div class="col-md-12 contlogin">
                                 <label for="uname"><b>Usuario</b></label>
-                                <input type="text" placeholder="Ingrese Usuario" name="correo" id="correo" required>
+                                <input type="email" placeholder="Ingrese Usuario" name="correo" id="correo" required>
                                 <label for="psw"><b>Contraseña</b></label>
                                 <input type="password" placeholder="Ingrese Contrasena" name="clave" id="clave" required>
                                 <button type="submit">Entrar</button>

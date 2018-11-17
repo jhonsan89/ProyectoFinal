@@ -13,6 +13,7 @@ este include guarda los css del proyecto
   <link rel="stylesheet" href="<?php echo base_url()?>/assets/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url()?>/assets/dist/css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/assets/dist/css/animate.css">
 <!-- bootstrap -->
   <link rel="stylesheet" href="<?php echo base_url()?>/assets/plugins/bootstrap/bootstrap.min.css">
 

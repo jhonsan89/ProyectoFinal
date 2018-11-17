@@ -2,6 +2,9 @@
 body {
     background: #fff;
 }
+p{
+    font-size: 1.2em;
+}
 .video{
     background: rgba(0,0,0,0.2);
         position:relative;
@@ -26,20 +29,28 @@ body {
 }
 
 .navbar-default {
-    background-color: #6877dc;
-    border-color: #ffffff;
+    background-color: rgba(0, 0, 0,0.5);
+    border-color: transparent;
     margin-bottom: 0;
+    border-radius: 0;
 }
 
 .navbar-default .navbar-brand {
     color: #fff;
 }
 .menu{
-	padding: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #67CDFD;
 }
 .piepagina{
     background: #67CDFD;
@@ -62,16 +73,10 @@ body {
     top: 50%;
     left: 10%;
     transform: translate(-10%, -50%);
-    -webkit-animation-name: titulo;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s;
-    /* Safari 4.0 - 8.0 */
-    animation-name: titulo;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes titulo {
+/*@-webkit-keyframes titulo {
     0% {
         transform: translate(-10%, -30%);
     }
@@ -84,18 +89,21 @@ body {
     	transform: translate(-10%, -50%);
     }
 }
-
+*/
 .integrantes {
     padding: 2%;
 }
 .integrantes h2{
-    color:#fff;
+    color:#67CDFD;
 }
 .integrantes p{
-    color:#fff;
+    color:#727270;
+}
+.citas{
+    padding:2% 0;
 }
 .box1{
-	background: #E86F0C;
+	animation-duration: 2s;
 }
 .corazon{
     padding: 6%;
@@ -206,6 +214,7 @@ body {
     float: right;
     padding-top: 16px;
     color:#fff;
+    text-shadow: 1px 1px 1px #000;
 }
 .loginform span.psw a{
     color:#67CDFD;
@@ -213,6 +222,15 @@ body {
 .loginform .contlogin b{
     color:#fff;
     text-shadow: 1px 1px 1px #000;
+}
+.loginform input[type=text], input[type=password],input[type=email]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 2px 6px 30px #000;
 }
 
 /* Change styles for span and cancel button on extra small screens */
