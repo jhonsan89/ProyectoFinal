@@ -5,10 +5,32 @@ class Login extends CI_Controller {
 
 	public function __construct() {
 		parent:: __construct();
+		$this->load->Model('login_model');
 	}
 
 	public function index()
 	{
 		$this->load->view('login');
 	}
+
+	public function ingreso() {
+
+		$resultado=$this->login_model->validar_usuario();
+
+		if (count($resultado)>0) {
+			$data_session=array(
+				'idusuario'=>$resultado[0]['idusuario'],
+				'nombreusuario'=>$resultado[0]['nombre'],
+				'idperfil'=>$resultado[0]['perfil'],
+				'correo'=>$resultado[0]['correo'],
+				'foto'=>$resultado[0]['foto']
+			);
+			$this->session->set_userdata($data_session);
+			redirect('home');
+		} else {
+			$mensaje="Usuario no registrado";
+			redirect('login');
+		}
+	}
 }
+?>

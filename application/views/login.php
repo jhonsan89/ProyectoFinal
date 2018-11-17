@@ -19,6 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <source src="<?php echo base_url()?>assets/media/citavideo.mp4" type="video/mp4">
                 </video>
 
+                <?php echo form_open("login/ingreso/"); ?>
 
                 <div class="col-md-12 loginform">
                 <div class="col-md-offset-3 col-md-6">
@@ -28,9 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                             <div class="col-md-12 contlogin">
                                 <label for="uname"><b>Usuario</b></label>
-                                <input type="text" placeholder="Ingrese Usuario" name="usuario" required>
+                                <input type="text" placeholder="Ingrese Usuario" name="correo" id="correo" required>
                                 <label for="psw"><b>Contraseña</b></label>
-                                <input type="password" placeholder="Ingrese Contrasena" name="psw" required>
+                                <input type="password" placeholder="Ingrese Contrasena" name="clave" id="clave" required>
                                 <button type="submit">Entrar</button>
                                 <label>
                                     <input type="checkbox" checked="checked" name="remember"> <b>Recordarme</b>
