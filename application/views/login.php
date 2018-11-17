@@ -14,16 +14,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body class="bg_login">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-offset-4 col-sm-4 text-center corazon ">
-                <img src="<?php echo base_url()?>assets/images/corazon-login.png" alt="" class="img-responsive">
-                <h1>Separa tu cita</h1>
-            </div>
-            <div class="col-md-12 loginform">
+            <div class="col-sm-12 video">
+                <video autoplay muted loop id="hvideo">
+                    <source src="<?php echo base_url()?>assets/media/citavideo.mp4" type="video/mp4">
+                </video>
+
+
+                <div class="col-md-12 loginform">
                 <div class="col-md-offset-3 col-md-6">
                     <form action="">
                         <div class=" ol-md-12 imgcontainer">
                             <img class="img-responsive" src="<?php echo base_url()?>assets/images/logo.png" alt="">
-			  			</div>
+                        </div>
                             <div class="col-md-12 contlogin">
                                 <label for="uname"><b>Usuario</b></label>
                                 <input type="text" placeholder="Ingrese Usuario" name="usuario" required>
@@ -39,7 +41,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                     </form>
                 </div>
-            </div>           
+            </div>
+            </div>
+            <div class="col-sm-offset-4 col-sm-4 text-center corazon ">
+                <img src="<?php echo base_url()?>assets/images/corazon-login.png" alt="" class="img-responsive">
+                <h1>Separa tu cita</h1>
+            </div>
+                       
         </div>
     </div>
      <?php include("incluidos/footer.php");?>
