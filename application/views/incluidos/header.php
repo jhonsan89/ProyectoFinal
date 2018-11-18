@@ -25,12 +25,14 @@ $ruta=base_url()."assets/images/usuarios/".$foto;
               <li><a href="<?php echo site_url('medicos')?>">Medicos</a></li>
               <li><a href="<?php echo site_url('medicamentos')?>">Medicamentos</a></li> 
               <li><a href="<?php echo site_url('reservas')?>">Reservas</a></li>
-              <li><a href="<?php echo site_url('orden-medicamentos')?>">Orden de medicamentos</a></li>              
+              <li><a href="<?php echo site_url('orden-medicamentos')?>">Orden de medicamentos</a></li>    
+              <li><a href="<?php echo site_url('salir')?>">Salir</a></li>          
             </ul> 
             <div class="col-sm-4 pull-right usu" >
               <h5><span>Bienvenido:</span> <?php echo $usuario;?></h5>
               <img src="<?php echo $ruta;?>" alt="<?php echo $usuario;?>" class="img-responsive img-circle">
-            </div>           
+            </div>   
+            <li><a href="<?php echo site_url('salir')?>">Salir</a></li>        
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
