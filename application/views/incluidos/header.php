@@ -23,7 +23,7 @@ $ruta=base_url()."assets/images/usuarios/".$foto;
               <li><a href="<?php echo site_url('usuarios')?>">Usuarios</a></li>
               <li><a href="<?php echo site_url('pacientes')?>">Pacientes</a></li>
               <li><a href="<?php echo site_url('medicos')?>">Medicos</a></li>
-              <li><a href="<?php echo site_url('medicamentos')?>">Medicamentos</a></li> 
+              <li><a href="<?php echo site_url('medicamento')?>">Medicamentos</a></li> 
               <li><a href="<?php echo site_url('reservas')?>">Reservas</a></li>
               <li><a href="<?php echo site_url('orden-medicamentos')?>">Orden de medicamentos</a></li>      
             </ul> 

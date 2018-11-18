@@ -9,8 +9,8 @@
 <div class="container-fluid bg_login pacinetes-cont">
 	
 		<div class="col-sm-4 sidebar">
-			<h3>medicos</h3>
-			<img src="<?php echo base_url()?>assets/images/tabla-medica.jpg" alt="" class="img-responsive">
+			<h3>Listado de medicos</h3>
+			<img src="<?php echo base_url()?>assets/images/side-medicos.png" alt="" class="img-responsive">
 		</div>
 		<div class="col-sm-8 tabla">
 			<?php echo $tabla;?>
