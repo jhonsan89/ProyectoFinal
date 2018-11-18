@@ -299,6 +299,9 @@ button, html input[type=button], input[type=reset], input[type=submit]{
         background: #f7fb00;
     border: hidden;
 }
+.flexigrid div.pDiv input, .flexigrid div.pDiv select {
+    color: #ff0534;
+}
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
