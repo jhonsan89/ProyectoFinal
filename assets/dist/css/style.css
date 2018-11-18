@@ -1,54 +1,118 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette');
+
 body {
     background: #fff;
 }
-p{
+
+p {
     font-size: 1.2em;
 }
-.video{
-    background: rgba(0,0,0,0.2);
-        position:relative;
-        max-height: 100vh;
-        min-height: 100vh;
-        width: 100%;
-        height: 100vh;
+
+.video {
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
-.video #hvideo{
+
+.video #hvideo {
     position: absolute;
-            right: 0;
-            bottom: 0;
-            min-width: 100%; 
-            z-index: -100;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -100;
 }
-.bg_login{
-    background:url(../../images/bg-login.png);
+
+.bg_login {
+    background: url(../../images/bg-login.png);
 }
 
 .navbar-header {
     width: 7%;
 }
-.usu{
-    display:flex;
+
+.usu {
+    display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
 }
-.usu img{
+
+.usu img {
     width: 40px;
     height: 40px;
     background: #67CDFD;
-    margin-left:10px;
+    margin-left: 10px;
     margin-top: 5px;
 }
-.usu h5{
-    color:#fff;
+
+.usu > i {
+    color: #67cdfd;
+    font-size: 1.5em;
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px #000;
+    transition: 1s;
+}
+.usu:hover > i {
+    color: #ff0534;
+    transform: rotate(-90deg);
+}
+
+.usu h5 {
+    color: #fff;
     text-shadow: 1px 1px 1px #000;
 }
-.usu h5 span{
-    color:#67CDFD;
+
+.usu h5 span {
+    color: #67CDFD;
+}
+
+.usu .drop-menu {
+    display: none;
+    position: absolute;
+    bottom: -56px;
+    min-width: 80%;
+    left: 0;
+    padding: 0;
+}
+
+.usu:hover .drop-menu {
+    display: block;
+}
+
+.usu .drop-menu li {
+    list-style: none;
+}
+
+.usu .drop-menu a {
+    text-decoration: none;
+}
+
+.usu .drop-menu a li {
+    list-style: none;
+    color: #fff;
+    background: #67CDFD;
+    padding: 4%;
+    box-shadow: 1px 1px 10px #000;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.usu .drop-menu a li i {
+    font-size: 1.5em;
+    color:#fff;
+
+}
+
+.usu .drop-menu a li:hover {
+    background: #ff0534;
 }
 
 
 .navbar-default {
-    background-color: rgba(0, 0, 0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-color: transparent;
     margin-bottom: 0;
     border-radius: 0;
@@ -57,7 +121,8 @@ p{
 .navbar-default .navbar-brand {
     color: #fff;
 }
-.menu{
+
+.menu {
     padding: 0;
     position: fixed;
     z-index: 999;
@@ -67,14 +132,17 @@ p{
 .navbar-default .navbar-nav>li>a {
     color: #fff;
 }
+
 .navbar-default .navbar-nav>li>a:hover {
     color: #fff;
     background-color: #67CDFD;
 }
-.piepagina{
+
+.piepagina {
     background: #67CDFD;
 }
-.piepagina h5{
+
+.piepagina h5 {
     color: #fff;
 }
 
@@ -105,29 +173,34 @@ p{
     }
 
     100%{
-    	transform: translate(-10%, -50%);
+        transform: translate(-10%, -50%);
     }
 }
 */
 .integrantes {
     padding: 2%;
 }
-.integrantes h2{
-    color:#67CDFD;
+
+.integrantes h2 {
+    color: #67CDFD;
 }
-.integrantes p{
-    color:#727270;
+
+.integrantes p {
+    color: #727270;
 }
-.citas{
-    padding:2% 0;
+
+.citas {
+    padding: 2% 0;
 }
-.box1{
-	animation-duration: 2s;
+
+.box1 {
+    animation-duration: 2s;
 }
-.corazon{
+
+.corazon {
     padding: 6%;
-    margin-top:4%;
-    margin-bottom:4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     -webkit-animation-name: latidos;
     /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 0.5s;
@@ -137,52 +210,66 @@ p{
     animation-iteration-count: infinite;
     transform: scale(1);
 }
-.pacinetes-cont{
+
+.pacinetes-cont {
     padding: 5% 0;
 }
-.tabla{
+
+.tabla {
     background: #fff;
     padding: 0 2%;
 }
-.sidebar{
-    background: rgba(0,0,0,0.5);
+
+.sidebar {
+    background: rgba(0, 0, 0, 0.5);
     padding: 2%;
 }
-.sidebar h3{
-    color:#fff;
+
+.sidebar h3 {
+    color: #fff;
     text-align: center;
 }
+
 @-webkit-keyframes latidos {
     0% {
         transform: scale(1);
     }
-    12%{
-       transform: scale(1.1); 
+
+    12% {
+        transform: scale(1.1);
     }
-    25%{
-       transform: scale(1); 
+
+    25% {
+        transform: scale(1);
     }
-    32%{
-        transform: scale(1.1); 
+
+    32% {
+        transform: scale(1.1);
     }
+
     50% {
         transform: scale(1);
     }
-    62%{
-        transform: scale(1.1); 
+
+    62% {
+        transform: scale(1.1);
     }
-    75%{
-       transform: scale(1);  
+
+    75% {
+        transform: scale(1);
     }
-    82%{
-        transform: scale(1.1); 
+
+    82% {
+        transform: scale(1.1);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
-.corazon h1{
-    color:#ff0534;
+
+.corazon h1 {
+    color: #ff0534;
     font-family: 'Courgette', cursive;
 }
 
@@ -195,7 +282,8 @@ p{
 }
 
 /* Full-width inputs */
-.loginform input[type=text], input[type=password] {
+.loginform input[type=text],
+input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -229,7 +317,7 @@ p{
 
 /* Center the avatar image inside this container */
 .loginform .imgcontainer img {
-    margin:auto;
+    margin: auto;
 }
 
 /* Avatar image */
@@ -247,17 +335,22 @@ p{
 .loginform span.psw {
     float: right;
     padding-top: 16px;
-    color:#fff;
+    color: #fff;
     text-shadow: 1px 1px 1px #000;
 }
-.loginform span.psw a{
-    color:#67CDFD;
+
+.loginform span.psw a {
+    color: #67CDFD;
 }
-.loginform .contlogin b{
-    color:#fff;
+
+.loginform .contlogin b {
+    color: #fff;
     text-shadow: 1px 1px 1px #000;
 }
-.loginform input[type=text], input[type=password],input[type=email]  {
+
+.loginform input[type=text],
+input[type=password],
+input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -272,34 +365,48 @@ p{
 .flexigrid div.mDiv div {
     background: #67CDFD;
 }
+
 .flexigrid div.tDiv {
-    background: #727270!important;
+    background: #727270 !important;
 }
+
 .flexigrid div.fbutton {
     color: #fff;
 }
+
 .flexigrid div.fbutton:hover {
     background: #ff4a4a;
-    border:solid 1px #ff4a4a!important;
+    border: solid 1px #ff4a4a !important;
 }
+
 .flexigrid div.fbutton:hover div {
-    border:solid 1px #ff4a4a!important;
+    border: solid 1px #ff4a4a !important;
 }
+
 .flexigrid div.sDiv {
     background: #67cdfd !important;
 }
+
 .flexigrid div.pDiv {
-    background: #727270!important;
+    background: #727270 !important;
     padding: 10px;
 }
-.flexigrid div.pDiv .pPageStat, .flexigrid div.pDiv .pcontrol {
+
+.flexigrid div.pDiv .pPageStat,
+.flexigrid div.pDiv .pcontrol {
     color: #fff;
 }
-button, html input[type=button], input[type=reset], input[type=submit]{
-        background: #f7fb00;
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    background: #f7fb00;
     border: hidden;
 }
-.flexigrid div.pDiv input, .flexigrid div.pDiv select {
+
+.flexigrid div.pDiv input,
+.flexigrid div.pDiv select {
     color: #ff0534;
 }
 
@@ -309,6 +416,7 @@ button, html input[type=button], input[type=reset], input[type=submit]{
         display: block;
         float: none;
     }
+
     .loginform .cancelbtn {
         width: 100%;
     }
