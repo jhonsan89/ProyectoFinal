@@ -20,7 +20,11 @@
               <li><a href="<?php echo site_url('medicamentos')?>">Medicamentos</a></li> 
               <li><a href="<?php echo site_url('reservas')?>">Reservas</a></li>
               <li><a href="<?php echo site_url('orden-medicamentos')?>">Orden de medicamentos</a></li>              
-            </ul>            
+            </ul> 
+            <div class="col-sm-4 pull-right usu" >
+              <h5><span>Bienvenio:</span> Jhon Sandoval</h5>
+              <img src="<?php echo base_url()?>assets/images/jhon.png" alt="" class="img-responsive img-circle">
+            </div>           
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>

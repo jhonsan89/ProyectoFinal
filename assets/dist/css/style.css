@@ -27,6 +27,25 @@ p{
 .navbar-header {
     width: 7%;
 }
+.usu{
+    display:flex;
+    align-items: center;
+}
+.usu img{
+    width: 40px;
+    height: 40px;
+    background: #67CDFD;
+    margin-left:10px;
+    margin-top: 5px;
+}
+.usu h5{
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
+}
+.usu h5 span{
+    color:#67CDFD;
+}
+
 
 .navbar-default {
     background-color: rgba(0, 0, 0,0.5);
