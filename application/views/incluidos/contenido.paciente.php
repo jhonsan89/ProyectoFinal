@@ -14,6 +14,5 @@
 		</div>
 		<div class="col-sm-8 tabla">
 			<?php echo $tabla;?>
-		</div>
-	
+		</div>	
 </div>
