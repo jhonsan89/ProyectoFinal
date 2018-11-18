@@ -1,3 +1,9 @@
+<?php
+
+$ruta=base_url()."assets/images/usuarios/".$foto;
+
+?>
+
 <header class="menu">
 
 	<nav class="navbar navbar-default">
@@ -22,8 +28,8 @@
               <li><a href="<?php echo site_url('orden-medicamentos')?>">Orden de medicamentos</a></li>              
             </ul> 
             <div class="col-sm-4 pull-right usu" >
-              <h5><span>Bienvenio:</span> Jhon Sandoval</h5>
-              <img src="<?php echo base_url()?>assets/images/jhon.png" alt="" class="img-responsive img-circle">
+              <h5><span>Bienvenido:</span> <?php echo $usuario;?></h5>
+              <img src="<?php echo $ruta;?>" alt="<?php echo $usuario;?>" class="img-responsive img-circle">
             </div>           
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

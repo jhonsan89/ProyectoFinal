@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h2>Citas</h2>
 					<img class="img-responsive" src="<?php echo base_url()?>assets/images/info1.png" alt="">
 					<br>
-					<p>Cuida del la salud de tu familia, separa tu cita con nosotros.</p>				
+					<p>Cuida de la salud de tu familia, separa tu cita con nosotros.</p>				
 				</div>
 				<div class="col-md-4 integrantes box1 animated zoomInUp delay-2s duration">
 					<h2>Médicos</h2>

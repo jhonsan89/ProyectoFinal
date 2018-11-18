@@ -5,7 +5,7 @@ class Usuarios_model extends CI_Model
 	function __construct()
 	{
 		$this->load->helper('security');
-		$this->tabla="hv_paciente";
+		$this->tabla="tblusuarios";
 	}
 
 	function listar ()

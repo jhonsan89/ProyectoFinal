@@ -22,8 +22,8 @@ class Login extends CI_Controller {
 				'idusuario'=>$resultado[0]['idusuario'],
 				'nombreusuario'=>$resultado[0]['nombre'],
 				'idperfil'=>$resultado[0]['perfil'],
-				'correo'=>$resultado[0]['correo'],
-				'foto'=>$resultado[0]['foto']
+				'correousuario'=>$resultado[0]['correo'],
+				'fotousuario'=>$resultado[0]['foto']
 			);
 			$this->session->set_userdata($data_session);
 			redirect('home');
