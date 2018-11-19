@@ -77,12 +77,25 @@ p {
     min-width: 80%;
     left: 0;
     padding: 0;
+
 }
 
 .usu:hover .drop-menu {
     display: block;
+    opacity: 1;
+    animation-name: salir;
+    animation-duration: 2s;
+    animation-timing-function: 1;
 }
 
+@-webkit-keyframes salir {
+ from{
+ opacity: 0;
+ }
+ to{
+     opacity: 1;
+ }
+}
 .usu .drop-menu li {
     list-style: none;
 }
