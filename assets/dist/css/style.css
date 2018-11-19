@@ -132,11 +132,13 @@ p {
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
+    transition: 1s;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
     color: #fff;
     background-color: #67CDFD;
+    transform: scale(1.2);
 }
 
 .piepagina {
