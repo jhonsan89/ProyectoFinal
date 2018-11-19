@@ -386,6 +386,38 @@ input[type=email] {
 .flexigrid div.fbutton:hover div {
     border: solid 1px #46AB35 !important;
 }
+.flexigrid .read-icon, .clone-icon, .edit-icon, .delete-icon{
+   background: inherit!important;
+   width: inherit!important;
+   height: inherit!important;
+   font-size: 1.4em;
+   margin:5px;
+   transition: 1s;
+}
+.flexigrid:hover .read-icon:hover, .clone-icon:hover, .edit-icon:hover, .delete-icon:hover{
+   transform: scale(1.3);
+}
+
+
+.flexigrid .read-icon::before {
+   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00e";
+   color:#14A1BD;
+}
+.flexigrid .clone-icon::before {
+   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f24d";
+   color:#C90F65;
+}
+.flexigrid .edit-icon::before {
+   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f044";
+   color:#8ACC10;
+}
+.flexigrid .delete-icon::before {
+   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f2ed";
+   color:#D82D0A;
+}
+
+
+
 
 .flexigrid div.sDiv {
     background: #67cdfd !important;
