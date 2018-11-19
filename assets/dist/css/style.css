@@ -148,6 +148,7 @@ p {
     transition: 1s;
 }
 
+
 .navbar-default .navbar-nav>li>a:hover {
     color: #fff;
     background-color: #67CDFD;
@@ -521,5 +522,11 @@ button.btn.btn-large, input[type="submit"].btn.btn-large:hover {
     }
     .navbar-brand {
         padding: 1px 64px;
+    }
+    .banner h1 {
+        font-size: 2em;        
+        top: 38%;
+        left: 10%;
+        transform: translate(-10%, -38%);
     }
 }

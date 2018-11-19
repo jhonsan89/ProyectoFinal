@@ -3,6 +3,7 @@
 Este script contiene los llamads a los js que se usan en el sistema para graficas, datatables, efectos, etc
 */
 ?>
+
 <!-- jQuery 3 -->
 <script src="<?php echo base_url()?>/assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -11,6 +12,7 @@ Este script contiene los llamads a los js que se usan en el sistema para grafica
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
+
 <!-- Bootstrap 3.3.7 -->
 <script src="<?php echo base_url()?>/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
