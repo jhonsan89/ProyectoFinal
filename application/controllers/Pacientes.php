@@ -49,7 +49,7 @@ class Pacientes extends CI_Controller {
 		$crud->display_as('tipo_sangre','Tipo de Sangre');
 		$crud->display_as('eps','Eps Asociada');
 		$crud->display_as('fecha_nacimiento','Fecha de Nacimiento');		
-		$crud->display_as('tipoidentificacion','Tipo de Identiuficación');
+		$crud->display_as('tipoidentificacion','Tipo de Identificación');
 		$crud->display_as('notasmedicas','Notas Medicas');
 
 

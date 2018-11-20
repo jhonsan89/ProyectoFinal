@@ -21,10 +21,10 @@ class Enfermedades extends CI_Controller {
 		$crud->required_fields('enfermedad');
 		$crud->unique_fields(array('enfermedad'));
 		
-		$crud->columns('id','enfermedad');
+		$crud->columns('idenfermedad','enfermedad');
 
 	
-		$crud->display_as('enfermedad','Tipos de enfermedades');
+		$crud->display_as('enfermedad','Tipos de Enfermedades');
 
 		$tabla=$crud->render();
 

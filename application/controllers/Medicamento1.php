@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Medicos extends CI_Controller {
+class Medicamento extends CI_Controller {
 
 	public function __construct() {
 		parent:: __construct();
@@ -20,23 +20,17 @@ class Medicos extends CI_Controller {
 		$crud=new grocery_CRUD();
 
 		$crud->set_theme('flexigrid');
-		$crud->set_table('tblmedicos');
-		$crud->set_subject('medicos');
-
-		$crud->set_relation('tipoidentificacion','tbltipoidentificacion','tipoidentificacion');
-
-
-		$crud->set_field_upload("foto","assets/images/medicos/");			
-		$crud->fields('foto','tipoidentificacion','identificacion','nombres','apellidos','telefono','fecharegistro');
-		$crud->required_fields('foto','tipoidentificacion','identificacion','nombres');
-		$crud->unique_fields(array('identificacion'));
+		$crud->set_table('tblmedicamento');
+		$crud->set_subject('Medicamentos');
 		
-		$crud->columns('foto','tipoidentificacion','identificacion','nombres','apellidos','telefono','fecharegistro');
-
-		$crud->display_as('tipoidentificacion','Tipo de Identificación');
+		$crud->fields('medicamento','fechaingreso','fechamodificacion');
+		$crud->required_fields('medicamento','fechaingreso');
+		$crud->unique_fields(array('idmedicamento'));
+		
+		$crud->columns('medicamento','fechaingreso','fechamodificacion');
 
 		$tabla=$crud->render();
-
+		
 
 		$vector['tabla']=$tabla->output;
 		$vector['css_files']=$tabla->css_files;
@@ -47,7 +41,6 @@ class Medicos extends CI_Controller {
 		$vector["correousuario"]=$this->session->userdata("correousuario");
 
 
-		$this->load->view('medicos',$vector);
-
+		$this->load->view('medicamento',$vector);
 	}
 }
