@@ -35,7 +35,7 @@ class Pacientes extends CI_Controller {
 		$crud->set_field_upload("foto","assets/images/pacientes/");			
 
 		$crud->fields('foto','identificacion','tipoidentificacion','eps','nombre','apellidos','telefono','direccion','tiposangre','fechanacimiento','pais','departamento','ciudad','enfermedad','enfermedad2','enfermedad3','medicamento','medicamento2','medicamento3','notasmedicas','observaciones');
-		$crud->required_fields('identificacion','tipo_identificacion','nombre_eps','nombre','apellidos','telefono','tipo_sangre','fecha_nacimiento');
+		$crud->required_fields('identificacion','tipo_identificacion','nombre_eps','nombre','apellidos','telefono','tipo_sangre','fechanacimiento');
 		$crud->unique_fields(array('identificacion'));
 		
 		$crud->columns('foto','identificacion','tipoidentificacion','eps','nombre','apellidos','telefono','direccion','tiposangre','fechanacimiento','pais','departamento','ciudad','enfermedad','enfermedad2','enfermedad3','medicamento','medicamento2','medicamento3','notasmedicas','observaciones');
@@ -48,7 +48,7 @@ class Pacientes extends CI_Controller {
 		$crud->display_as('medicamento3','Medicamentos Recetados');
 		$crud->display_as('tipo_sangre','Tipo de Sangre');
 		$crud->display_as('eps','Eps Asociada');
-		$crud->display_as('fecha_nacimiento','Fecha de Nacimiento');		
+		$crud->display_as('fechanacimiento','Fecha de Nacimiento');		
 		$crud->display_as('tipoidentificacion','Tipo de Identificación');
 		$crud->display_as('notasmedicas','Notas Medicas');
 
