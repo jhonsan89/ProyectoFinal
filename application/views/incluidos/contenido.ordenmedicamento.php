@@ -2,14 +2,14 @@
 		<div class="row">
 			<div class="col-sm-12 banner">
 				<img src="<?php echo base_url()?>assets/images/pacientes.png" alt="" class="img-responsive">
-				<h1 class="animated slideInRight delay-2s duration">Reserva de Citas</h1>
+				<h1 class="animated slideInRight delay-2s duration">Orden de Medicamentos</h1>
 			</div>	
 		</div>	
 </div>
 <div class="container-fluid bg_login pacinetes-cont">
 	
 		<div class="col-sm-4 sidebar">
-			<h3>Reserva de Citas</h3>
+			<h3>Orden de Medicamentos</h3>
 			<img src="<?php echo base_url()?>assets/images/side-pacietes.png" alt="" class="img-responsive">
 		</div>
 		<div class="col-sm-8 tabla">

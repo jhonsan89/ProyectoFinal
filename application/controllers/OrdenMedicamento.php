@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ReservaCita extends CI_Controller {
+class OrdenMedicamento extends CI_Controller {
 
 	public function __construct() {
 		parent:: __construct();
@@ -20,26 +20,31 @@ class ReservaCita extends CI_Controller {
 		$crud=new grocery_CRUD();
 
 		$crud->set_theme('flexigrid');
-		$crud->set_table('tblreservacita');
-		$crud->set_subject('Reserva de Citas');
+		$crud->set_table('tblordenmedica');
+		$crud->set_subject('Orden Medicamentos');
 		
 		$crud->set_relation('nombre','tblpacientes','{nombre} {apellidos}');
 		$crud->set_relation('identificacion','tblpacientes','identificacion');
-		$crud->set_relation('tipoidentificacion','tbltipoidentificacion','tipoidentificacion');		
-		$crud->set_relation('nombres','tblmedicos','nombres');		
-		$crud->set_relation('tipoatencion','tblatencionmedica','tipoatencion');
+		$crud->set_relation('tipoidentificacion','tbltipoidentificacion','tipoidentificacion');	
 
-		$crud->fields('nombre','tipoidentificacion','identificacion','nombres','tipoatencion','fechareserva');
-		$crud->required_fields('nombre','tipoidentificacion','identificacion','nombres','tipoatencion','fechareserva');
-		$crud->unique_fields(array('fechareserva','nombre','identificacion'));
+		$crud->set_relation('nombres','tblmedicos','nombres');		
+
+		$crud->fields('nombre','tipoidentificacion','identificacion','nombres','fecha','medicamento','cantidad','medicamento2','cantidad2','medicamento3','cantidad3','observaciones');
+
+		$crud->required_fields('nombre','tipoidentificacion','identificacion','nombres','tipoatencion','fecha');
+		$crud->unique_fields(array('fecha','nombre','identificacion'));
 		
-		$crud->columns('tipoidentificacion','identificacion','nombre','nombres','tipoatencion','fechareserva');
+		$crud->columns('tipoidentificacion','identificacion','nombre','nombres','fecha','medicamento','cantidad','medicamento2','cantidad2','medicamento3','cantidad3','observaciones');
 
 		$crud->display_as('tipoidentificacion','Tipo de Identificacion');
 		$crud->display_as('nombre','Nombre del Paciente');
 		$crud->display_as('nombres','Medico Tratante');
 		$crud->display_as('tipoatencion','Atencion Medica');
-		$crud->display_as('fechareserva','Fecha y Hora de la Cita');
+		$crud->display_as('fecha','Fecha y Hora');
+		$crud->display_as('medicamento','Medicamento recetado');
+		$crud->display_as('medicamento2','Medicamento recetado');
+		$crud->display_as('medicamento3','Medicamento recetado');
+
 		
 
 		$tabla=$crud->render();
@@ -54,6 +59,6 @@ class ReservaCita extends CI_Controller {
 		$vector["correousuario"]=$this->session->userdata("correousuario");
 
 
-		$this->load->view('reservacita',$vector);
+		$this->load->view('ordenmedicamento',$vector);
 	}
 }
